@@ -12,10 +12,10 @@ h2{
 .container{
     width: 400px;
     height: 400px;
-    background-color: rgb(25, 24, 24);
+    background-color: hsl(216, 12%, 8%);
     border-radius: 30px;
     margin:auto;
-    margin-top: 50px;
+    margin-top: 120px;
     
 }
 
@@ -93,8 +93,7 @@ h2{
     margin-left:33px;
     color:#f27609;
     border-radius: 50px;
-    border-style:solid;
-    border-color:black;
+    border:none;
     cursor:pointer;
 }
 
@@ -119,6 +118,7 @@ h2{
     color:#f27609;
     border-radius:28px;
     padding:10px 50px;
+    border:none;
     
 }
 
