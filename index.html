@@ -13,20 +13,31 @@
 
     <script>
         var punto=0
+        var Idant=null
         
            $(document).ready(function(){ 
               
-               document.getElementById("uno").addEventListener("click",()=>punto=1);
-               document.getElementById("dos").addEventListener("click",()=>punto=2);
-               document.getElementById("tres").addEventListener("click",()=>punto=3);
-               document.getElementById("cuatro").addEventListener("click",()=>punto=4);
-               document.getElementById("cinco").addEventListener("click",()=>punto=5);
+               document.getElementById("uno").addEventListener("click",()=>punto1(1,$("#uno")));
+               document.getElementById("dos").addEventListener("click",()=>punto1(2,$("#dos")));
+               document.getElementById("tres").addEventListener("click",()=>punto1(3,$("#tres")));
+               document.getElementById("cuatro").addEventListener("click",()=>punto1(4,$("#cuatro")));
+               document.getElementById("cinco").addEventListener("click",()=>punto1(5,$("#cinco")));
                document.getElementById("envia").addEventListener("click", displayDate);
                
 
 
            })
            
+           function punto1(pnt,Id){
+               punto=pnt
+               Id.css({"backgroundColor":"gray","color":"#faf9f5"})
+               if (Idant != null){
+                    Idant.css({"backgroundColor":"hsl(213, 19%, 18%)","color":"#f27609"})
+               }
+               Idant=Id
+               
+           }
+
 
            function displayDate(){
 
