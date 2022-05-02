@@ -30,9 +30,17 @@
            
            function punto1(pnt,Id){
                punto=pnt
-               Id.css({"backgroundColor":"gray","color":"#faf9f5"})
+               Id.addClass("btn_selected")
+               //Id.css({"backgroundColor":"gray","color":"#faf9f5"})
                if (Idant != null){
-                    Idant.css({"backgroundColor":"hsl(213, 19%, 18%)","color":"#f27609"})
+                    //Idant.css({"backgroundColor":"hsl(213, 19%, 18%)","color":"#f27609"})
+                    //Idant.hover(function(){
+                    //    $(this).css({"backgroundColor":"#f27609","color":"#faf9f5"})
+                    //},function(){
+                    //    $(this).css({"backgroundColor":"hsl(213, 19%, 18%)","color":"#f27609"})
+                    //},)
+                    Idant.removeClass("btn_selected")
+                    
                }
                Idant=Id
                

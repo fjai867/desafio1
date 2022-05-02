@@ -105,8 +105,13 @@ h2{
 
 .btn:active {
 	position:relative;
-	top:1px;
+	top:10px;
     background-color:gray;
+}
+
+.btn_selected {
+    background-color:gray;
+    color:#faf9f5;
 }
 
 
